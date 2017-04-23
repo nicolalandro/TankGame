@@ -9,6 +9,7 @@ func _on_play_button_pressed():
 	print("Play")
 	get_node("selection_tank").set_pos(Vector2(15,-26))
 	get_node("selection_tank").show();
+	get_tree().change_scene("res://game/tank_free_mode.scn")
 func _on_option_button_pressed():
 	print("Option")
 	get_node("selection_tank").set_pos(Vector2(15,72))
